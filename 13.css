@@ -1,0 +1,193 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .so {border:1px solid black;
+     margin-top: 0;
+     width: 100%;
+     height: 250px; 
+     text-align: center;
+     }
+.so >img{
+    width: 100%;
+    height: 250px;
+}
+.so h1{
+    position: absolute;
+    top:100px;
+    left:40%;
+    transform: translate(-50%,-50%);
+       
+       
+
+}
+
+
+
+    h1{text-align: center;
+        padding-top: 50px;
+        text-shadow:3px 1px 3px  black;
+    
+        color: rgb(167, 43, 43);
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    body{text-align:auto;
+        border:2px solid blue;
+        margin-bottom: 0;
+        
+        background-color: wheat;
+        
+        padding:0px 10px 10px 10px ;
+    }
+nav{
+    background-color:blue;
+    height: 60px;width: 100%;
+    border:2px solid black;
+}
+.logo{
+    float: left;
+    color:white;
+    line-height: 10px;
+    padding: .40px;
+    margin-left: 10px;
+    font-size:33px;
+    font-weight: 600;
+    text-shadow: 2px 1px 3px black;
+    
+}
+ 
+
+ 
+ section img{width: 100%;
+
+     height:500px;
+ }
+nav ul{
+    float: right;
+    margin-right:40px ;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 20px;
+    margin: 10px;
+}
+nav ul li a{
+    color:white;
+    padding: 8px;font: 24px;
+     
+    font-weight: 500;
+    border-radius: 3px;
+    text-transform: uppercase;
+    }
+    nav ul li a:hover{
+        background-color: lightblue;
+        border:1px solid black;
+        color: crimson;
+        transition: .5s;
+    }
+    
+    @media screen and (max-width: 950px){
+        .logo{float: left;
+            color:white;
+            line-height: 0px;
+            padding: 17px;
+            margin-left: 4px;
+            margin-bottom: 4px;
+            font-size:30px;
+            overflow: auto;
+            text-shadow: 2px 1px 2px black;
+            font-weight: 600}
+            nav ul li a{
+                color:white;
+                padding: 5px;font: 18px;
+                 
+                font-weight: 500;
+                border-radius: 3px;
+                text-transform: uppercase;
+                }
+    }
+    @media screen and (max-width: 780px) {
+      
+        
+        .checkbut{ width: 22px;height: 22px;position: absolute;z-index: 20;top:280px;
+            right:20px;cursor:pointer;}
+           
+        .spiner{ height: 3px;background-color:black;transition: all 0.3s;}
+        .spiner.bottom,.spiner.mid{
+            margin-top: 3px;
+        }
+        nav ul{position: absolute;
+            width: 250px;height: 700px;
+            top:360px;
+            margin-right:1px;
+            right:-250px;
+            z-index: 30;
+            text-align: center;
+            background-color: blue;
+            color:white;
+            transition: all .5s;}
+            nav ul li {display: block;
+            margin:10px o ;
+            overflow: auto;
+        line-height: 60px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color:white;
+    }
+            .logo{float: left;
+                color:white;
+                line-height: 50px;
+                padding: .10px;
+                margin-left: 4px;
+                text-shadow: 2px 1px 2px black;
+                font-size:33px;
+                font-weight: 600
+                 }
+                #check:checked~ul{right:0;}
+                #check:checked~.checkbut>.spiner.top{transform: rotate(135deg);margin-top: 9px;transition-delay: .6s;}
+                #check:checked~.checkbut>.spiner.bottom{transform: rotate(-135deg);margin-top:-9px;transition-delay: .6s;}
+                #check:checked~.checkbut>.spiner.mid{opacity:0;transition-delay: .2s;}
+                nav ul  :hover{
+                    background-color: lightblue;
+                    
+                    color: crimson;
+                    transition: .5s;
+                }
+                h1{
+                    font-size: 30px;
+                }
+                p{   
+                    position: absolute;
+                    right:7px;bottom:130px;
+                    font-size: 30px;
+                    width:200px;
+                    font-weight: 600;
+                    text-shadow: 3px 2px 4pc black;
+                    border:1px solid black;
+                    border-radius: 3px;
+                    margin:0px 1% 50px 70%;
+                }
+              
+           
+           
+    }
+    p{   
+        position: absolute;
+        right:7px;bottom:130px;
+        font-size: 30px;
+        font-weight: 600;
+        text-shadow: 3px 2px 4pc black;
+        border:1px solid black;
+        border-radius: 3px;
+        margin:0px 1% 50px 70%;
+    }
+  
